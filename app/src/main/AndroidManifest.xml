@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sunnyweather">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--通过name=".SunnyWeatherApplication"来告诉系统程序启动时应该初始化SunnyWeatherApplication类
+        以此来实现全局获取context的机制-->
     <application
+        android:name=".SunnyWeatherApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
