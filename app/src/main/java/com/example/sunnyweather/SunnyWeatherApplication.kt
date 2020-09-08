@@ -9,8 +9,9 @@ class SunnyWeatherApplication :Application(){
         //将context设置成静态变量很容易产生内存泄漏的问题，因此使用注解来让AS忽略这个警告提示
         @SuppressLint("StaticFieldLeak")
         lateinit var context: Context
+
         //彩云天气的令牌值
-        const val TOKEN=""
+        const val TOKEN = "WLH9YwRE55n5ROH1"
     }
 
     override fun onCreate() {
